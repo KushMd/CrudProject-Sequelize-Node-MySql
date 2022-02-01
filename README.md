@@ -1,8 +1,9 @@
 # CrudProject-Sequelize-Node-MySql
 
-do npm install
+npm install
 
 download Xampp , and run apache(port 8080) and mysql(port 3306) and open localhost:8080/phpmyadmin/
+create a new Database in Xampp and give the same name as in config.json file.
 
 npm run start:dev
 
