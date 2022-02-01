@@ -32,6 +32,7 @@ function getById(req, res, next) {
 }
 
 function create(req, res, next) {
+  console.log(req, "hello");
   userService
     .create(req.body)
     .then(() => res.json({ message: "User created" }))
@@ -55,6 +56,7 @@ function _delete(req, res, next) {
 // schema functions
 
 function createSchema(req, res, next) {
+  console.log(req);
   const schema = Joi.object({
     title: Joi.string().required(),
     firstName: Joi.string().required(),
